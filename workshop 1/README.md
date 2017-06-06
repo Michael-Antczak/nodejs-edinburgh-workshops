@@ -42,3 +42,45 @@ function handler(request, response) {
   console.log("Hello again!");
 }
 ```
+
+# Method, URL and Headers
+```
+var method = request.method;
+var url = request.url;
+var headers = request.headers;
+var userAgent = headers['user-agent'];
+```
+
+# Request Body
+
+# Response
+
+```
+response.writeHead(200, {'Content-Type': 'text/html'}) 
+
+	if (url === '/') {
+  
+		response.write('<html><body>');
+		response.write('<h1>Hello, World!</h1><br><h2>MainPage</h2>');
+		response.end('<h3>Requested url ' + url + '</h3></body></html>');
+    
+	} else if (url === '/me') {
+  
+		response.write('<html><body><h1>Hello, World!</h1><br><h2>About me</h2>');
+		response.end('<h3>Requested url ' + url + '</h3></body></html>');
+    
+	} else {
+  
+		response.write('<html><body><h1>Error</h1><br>');
+		response.end('<h3>No such a page ' + url + '</h3></body></html>');
+    
+	}
+```
+
+
+# Node.js v8 issue with http
+
+https://github.com/nodejs/node/issues/13461
+
+### Biliography
+https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/ 
