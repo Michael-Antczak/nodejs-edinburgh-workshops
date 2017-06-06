@@ -82,5 +82,6 @@ response.writeHead(200, {'Content-Type': 'text/html'})
 
 https://github.com/nodejs/node/issues/13461
 
-### Biliography
+### Resources
 https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/ 
+https://github.com/node-girls/express-workshop
