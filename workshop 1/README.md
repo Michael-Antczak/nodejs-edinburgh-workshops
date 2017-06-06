@@ -83,6 +83,8 @@ response.writeHead(200, {'Content-Type': 'text/html'})
 https://github.com/nodejs/node/issues/13461
 
 ### Resources
-https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction
-https://github.com/node-girls/express-workshop
-https://github.com/node-girls/express-workshop/blob/master/step01.md
+[Anatomy of an HTTP Transaction](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction)
+
+[Node Girls Express Workshop](https://github.com/node-girls/express-workshop/blob/master/step01.md)
+
+[Learn You Node](https://www.github.com/workshopper/learnyounode)
