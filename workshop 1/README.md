@@ -1,5 +1,5 @@
 # Basic http server
-```
+```javascript
 var http = require('http');
 
 var server = http.createServer(function(request, response) {
@@ -15,7 +15,7 @@ server.listen(9999);
 # Why? 
 
 In Javascript you can do something like that:
-```
+```javascript
 function hello(name) {
 
   console.log("Hello ", name);
@@ -33,7 +33,7 @@ greet(hello, "Michael");
 
 so it could be like that too:
 
-```
+```javascript
 var http = require('http');
 
 http.createServer(handler).listen(9999);
@@ -44,7 +44,7 @@ function handler(request, response) {
 ```
 
 # Method, URL and Headers
-```
+```javascript
 var method = request.method;
 var url = request.url;
 var headers = request.headers;
@@ -55,7 +55,7 @@ var userAgent = headers['user-agent'];
 
 # Response
 
-```
+```javascript
 response.writeHead(200, {'Content-Type': 'text/html'}) 
 
 	if (url === '/') {
