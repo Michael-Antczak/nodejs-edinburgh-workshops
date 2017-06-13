@@ -11,6 +11,21 @@ var server = http.createServer(function(request, response) {
 
 server.listen(9999);
 ```
+or maybe this is more readable: 
+```javascript
+const http = require('http');
+
+const requestHandler = (request, response) => {
+
+    const output = `Request to the server came at ${new Date()}.` 
+    response.end(output);
+    
+}
+
+const server = http.createServer(requestHandler);
+
+server.listen(9999);
+```
 
 # Why? 
 
